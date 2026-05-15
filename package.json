@@ -2,6 +2,7 @@
   "name": "aasha-sm-services",
   "private": true,
   "scripts": {
+    "build": "npm run build --prefix client",
     "dev": "concurrently -n web,api -c cyan,magenta \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
     "start": "npm run dev",
     "seed": "npm run seed --prefix server",
